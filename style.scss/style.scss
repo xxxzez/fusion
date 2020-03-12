@@ -31,7 +31,7 @@ header {
             font-size: 55px;
             line-height: 90px;
             text-align: center;
-            padding: 57px 57px 67px 55px;
+            padding: 60px;
             font-family: "Merriweather", serif;
 
             span {
@@ -40,8 +40,22 @@ header {
         }
 
 
-        nav{
-            color: $white;
+        .nav-links {
+            margin-top: 30px;
+            font-size: 13px;
+            font-family: "Open Sans";
+
+            a {
+                outline: none;
+                text-decoration: none;
+                color: $white;
+            }
+
+            a:not(:last-child) {
+                margin-right: 10px;
+                border-right: 0.1px solid $fusion;
+                padding-right: 10px;
+            }
         }
     }
 
