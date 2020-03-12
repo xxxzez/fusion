@@ -31,7 +31,7 @@ header {
             font-size: 55px;
             line-height: 90px;
             text-align: center;
-            padding: 60px;
+            padding: 45px;
             font-family: "Merriweather", serif;
 
             span {
@@ -44,6 +44,9 @@ header {
             margin-top: 30px;
             font-size: 13px;
             font-family: "Open Sans";
+            font-weight: 400;
+
+
 
             a {
                 outline: none;
@@ -64,22 +67,26 @@ header {
 
         }
 
-        .cursor {
-            color: $fusion;
-        }
 
         .lower-buttons {
             display: flex;
             flex-direction: row;
-            align-content: space-between;
-            color: $white;
 
-            .f-button {}
+            .f-button {
+                
+                align-self: flex-start;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
 
-            .get-in-touch {}
-
-            .get-in-touch::after {
-                content: "\e02a";
+            .get-in-touch {
+                font-size: 14px;
+                line-height: 40px;
+                color: $white;
+                font-family: "Roboto";
+                font-weight: 500;
             }
         }
     }
@@ -88,7 +95,6 @@ header {
 
 .services {
     background-color: #202020;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +107,7 @@ header {
         font-size: 14px;
         line-height: 40px;
         text-align: center;
-        margin-top: 150PX;
+        margin-top: 24px;
     }
 
     .services-description {
@@ -110,11 +116,64 @@ header {
         color: $white;
         font-family: "Merriweather";
         text-align: center;
-        margin-top: 36px;
+        margin-top: 40px;
     }
 
     .services-cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 115px;
 
+
+
+        .services-card {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 225px;
+
+            img {
+                width: 21px;
+                margin-bottom: 36px;
+            }
+
+            .card-title {
+                margin-bottom: 24px;
+                font-family: "Merriweather";
+                color: $white;
+                text-align: left;
+                font-size: 30px;
+                line-height: 65px;
+            }
+
+            .card-description {
+                font-size: 14px;
+                line-height: 27px;
+                color: #bbbbbb;
+                font-family: "Open Sans";
+                font-weight: 400;
+                margin-bottom: 32px;
+            }
+
+            .card-more {
+                font-size: 14px;
+                line-height: 28px;
+                color: $white;
+                font-family: "Open Sans";
+                font-weight: 600;
+                margin-bottom: 150px;
+            }
+        }
+
+        .services-card:not(:last-child) {
+            margin-right: 165px;
+        }
     }
 
+}
+
+
+.projects{
+    background-color: #181818;
+    height: 950px;
 }
