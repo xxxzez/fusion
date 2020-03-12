@@ -1,0 +1,54 @@
+@import "_fonts";
+@import "_mixins";
+@import "_variables";
+@import "_reset";
+
+
+body {
+    width: 100%;
+}
+
+header {
+    background: url(../assets/main.png) center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+
+    .wrapper {
+        background: rgba(35, 35, 35, 0.8);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        z-index: 3;
+
+        .title {
+            color: $white;
+            border: 1px #adaaaa solid;
+            font-size: 55px;
+            line-height: 90px;
+            text-align: center;
+            padding: 57px 57px 67px 55px;
+            font-family: "Merriweather", serif;
+
+            span {
+                color: $fusion;
+            }
+        }
+
+
+        nav{
+            color: $white;
+        }
+    }
+
+}
+
+
+
+.services {
+    height: 100vh;
+}
